@@ -14,20 +14,32 @@
             padding: 0;
             font-family: Arial, sans-serif; /* or any other preferred font */
         }
+        .container {
+            position: relative;
+        }
+        .a-scene {
+            position: absolute;
+            top: 100px; /* Adjust position as needed */
+            left: 0;
+            width: 100%; /* Ensure full width */
+            height: calc(100% - 100px); /* Adjust height to fit remaining space */
+        }
     </style>
 </head>
 <body>
-    <h1>I Love You ❤️</h1>
-    <form action="/login" method="post">
-        <label for="name">Name:</label><br>
-        <input type="text" id="name" name="name" required><br>
-        <label for="password">Password:</label><br>
-        <input type="password" id="password" name="password" required><br><br>
-        <input type="submit" value="Login">
-    </form>
+    <div class="container">
+        <h1>I Love You ❤️</h1>
+        <form action="/login" method="post">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br>
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password" required><br><br>
+            <input type="submit" value="Login">
+        </form>
+    </div>
 
     <!-- AR Content -->
-    <a-scene>
+    <a-scene class="a-scene">
         <a-assets>
             <a-asset-item id="model" src="uploads_files_2554230_microphone.glb"></a-asset-item>
         </a-assets>
