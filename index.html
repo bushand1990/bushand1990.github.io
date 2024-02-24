@@ -1,9 +1,11 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kind</title>
+    <!-- Include A-Frame library -->
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
 </head>
 <body>
     <h1>I Love You ❤️</h1>
@@ -14,5 +16,13 @@
         <input type="password" id="password" name="password" required><br><br>
         <input type="submit" value="Login">
     </form>
+
+    <!-- A-Frame entity with GLB model -->
+    <a-scene>
+        <a-assets>
+            <a-asset-item id="model" src="uploads_files_2554230_microphone.glb"></a-asset-item>
+        </a-assets>
+        <a-entity gltf-model="#model" scale="0.1 0.1 0.1"></a-entity>
+    </a-scene>
 </body>
 </html>
