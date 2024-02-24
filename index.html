@@ -13,17 +13,26 @@
             margin: 0;
             padding: 0;
             font-family: Arial, sans-serif; /* or any other preferred font */
+            position: relative;
+            z-index: 2; /* Ensure form elements are above the AR scene */
         }
         .container {
             position: relative;
+            z-index: 2; /* Ensure form elements are above the AR scene */
         }
         .form-container {
             margin-top: 50px; /* Adjust margin-top as needed */
+            position: relative;
+            z-index: 2; /* Ensure form elements are above the AR scene */
         }
         .a-scene {
             margin-top: 50px; /* Adjust margin-top to match .form-container margin-top */
             width: 100%;
             height: 500px; /* Adjust height as needed */
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1; /* Ensure AR scene is below form elements */
         }
     </style>
 </head>
