@@ -17,25 +17,28 @@
         .container {
             position: relative;
         }
+        .form-container {
+            margin-top: 50px; /* Adjust margin-top as needed */
+        }
         .a-scene {
-            position: absolute;
-            top: 100px; /* Adjust position as needed */
-            left: 0;
-            width: 100%; /* Ensure full width */
-            height: calc(100% - 100px); /* Adjust height to fit remaining space */
+            margin-top: 50px; /* Adjust margin-top to match .form-container margin-top */
+            width: 100%;
+            height: 500px; /* Adjust height as needed */
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>I Love You ❤️</h1>
-        <form action="/login" method="post">
-            <label for="name">Name:</label><br>
-            <input type="text" id="name" name="name" required><br>
-            <label for="password">Password:</label><br>
-            <input type="password" id="password" name="password" required><br><br>
-            <input type="submit" value="Login">
-        </form>
+        <div class="form-container">
+            <h1>I Love You ❤️</h1>
+            <form action="/login" method="post">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required><br>
+                <label for="password">Password:</label><br>
+                <input type="password" id="password" name="password" required><br><br>
+                <input type="submit" value="Login">
+            </form>
+        </div>
     </div>
 
     <!-- AR Content -->
